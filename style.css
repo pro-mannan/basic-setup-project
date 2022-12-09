@@ -47,7 +47,7 @@ ul{
 }
 header{
     height:60px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .header_left{
     display:flex;
@@ -154,4 +154,315 @@ header{
     .header_left nav ul li a{
         width:100%;
     }
+ }
+
+
+ /* hero bannar section start now*/
+ #hero{
+    height: calc( 100vh - 70px);
+    background-image: url('./images/cover/cover.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 64%;
+    display:flex;
+    align-items: center;
+}
+ /* .hero_bannar{
+    display:flex;
+    justify-content: center;
+ } */
+ .hero_bannar h1{
+    width: 645px;
+    height: 184px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+    color: #212353;
+ }
+ .hero_bannar p{
+    width: 380px;
+    height: 120px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #4B5D68;
+    margin: 50px 0;
+ }
+ .hero_bannar a{
+    background: #9C69E2;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: #FFFFFF;
+ }
+ .hero_bannar a:hover{
+    text-decoration: underline;
+ }
+
+ @media screen and (max-width: 991px) {
+   
+    .hero_bannar h1{
+        font-size: 60px;
+     }
+     .hero_bannar p{
+        font-size: 16px;
+        margin: 20px 0;
+     }
+     .hero_bannar a{
+        padding: 13px 30px;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+    .hero_bannar h1{
+        width: 364px;
+        height: auto;
+        font-size: 50px;
+        line-height: 40px;
+        font-weight: 300;
+        line-height: 1.4;
+     }
+     .hero_bannar p{
+        font-size: 14px;
+     }
+     .hero_bannar a{
+        padding: 11px 25px;
+     }
+ }
+
+ @media screen and (max-width: 576px){
+    .hero_bannar h1{
+        font-size:40px;
+     }
+     .hero_bannar p{
+        font-size: 12px;
+     }
+     .hero_bannar a{
+        padding: 10px 25px;
+     }
+ }
+ @media screen and (max-width: 480px){
+    #hero{
+        margin-top: 80px;
+    }
+ }
+
+ /* services section start now */
+ #sevice{
+    margin:90px 0;
+ }
+ .inner_service{
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    gap: 40px;
+ }
+ .service_left{
+    min-width:503px;
+    height:480px;
+    width: 100%;
+ }
+ .service_left img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .service_right h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+ }
+
+ .service_right p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin-top:40px;
+ }
+
+
+ @media screen and (max-width: 991px) {
+    .service_right h2{
+        font-size: 30px;
+        line-height: 130%;
+     }
+     .service_right p {
+        font-size: 16px;
+        line-height: 1.5;
+     }
+ }
+ @media screen and (max-width: 768px) {
+    .inner_service{
+        flex-direction: column;
+        text-align: center;
+    }
+ }
+
+
+ /* feature section style start */
+ #features{
+    margin: 50px 0;
+    border-bottom: 1px solid  #9C69E2;
+ }
+ #features .container > h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+    text-align:center;
+ }
+ #features .container > p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #4B5D68;
+    width: 584px;
+    margin: 50px auto 0;
+ }
+ .feauture_items{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+ }
+ .feauture_item{
+    max-width: 46%;
+    width: 100%;
+    display:flex;
+    background-image: url('./images/feature/f12.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    margin-bottom: 50px;
+    padding: 15px;
+ }
+ .feauture_img img{
+    transform: translateY(50px) ;
+    margin-right: 20px;
+ }
+ .feauture_info h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #212353;
+ }
+ .feauture_info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin-top: 20px;
+ }
+ .feauture_info a{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    letter-spacing: 0.005em;
+    color: #212353;
+    margin-top:20px;
+    text-transform: capitalize;
+ }
+ .feauture_info a i{
+    color:#9C69E2;
+    font-size:20px;
+    margin-left: 20px;
+    transition: .3s;
+ }
+ .feauture_info a:hover i{
+    margin-left: 30px;
+ }
+
+ @media screen and (max-width: 991px) {
+   .feauture_items{
+    flex-direction: column;
+   }
+   .feauture_item{
+    max-width:100%;
+   }
+
+ }
+
+ @media screen and (max-width: 768px) {
+
+ }
+
+ @media screen and (max-width: 576px){
+    #features .container > p{
+        font-size: 16px;
+        width: 370px;
+     }
+    .feauture_info h3{
+        font-size: 20px;
+     }
+     .feauture_info p{
+        font-size: 14px;
+     }
+     .feauture_info a{
+        font-size: 14px;
+     }
+ }
+ @media screen and (max-width: 480px){
+   .feauture_item{
+    flex-direction: column;
+    padding: 15px;
+   }
+   .feauture_img img{
+    transform: translateY(10px) ;
+    margin-right: 0;
+ }
+ }
+
+
+ /* free section start now */
+ #free{
+    padding: 100px 0;
+ }
+
+ .inner_free{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .free_left h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    align-items: center;
+    color: #212353;
+ }
+ .free_left p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    margin-top:20px;
+ }
+ .free_right{
+    display:flex;
+ }
+ .leram_more{
+    width: 170px;
+    height: 60px;
+    background: #F063B8;
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color:#FFFFFF;
+    cursor:pointer;
+ }
+ .leram_more:hover {
+    text-decoration: underline;
  }
