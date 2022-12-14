@@ -466,3 +466,55 @@ header{
  .leram_more:hover {
     text-decoration: underline;
  }
+
+
+ /* footer section start now */
+ footer{
+   margin:120px 0;
+ }
+ .widgets{
+   display:flex;
+   justify-content: space-between;
+   gap:10px;
+ }
+ .address .footer_logo{
+   display:flex;
+   align-items: center;
+   margin-bottom:67px;
+ }
+ .footer_logo h3{
+   font-weight: 900;
+   font-size: 20px;
+   line-height: 160%;
+   color: #212353;
+   margin-left:20px;
+ }
+ .address p{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 180%;
+   letter-spacing: 0.01em;
+   color: #212353;
+   margin-bottom:10px;
+   width:300px;
+ }
+ .about h4, .help h4, .social_media h4{
+   font-weight: 900;
+   font-size: 16px;
+   line-height: 160%;
+   color: #212353;
+   text-align: center;
+   margin-bottom:67px;
+   align-items: flex-start;
+   text-transform: capitalize;
+ }
+
+ .about ul li a,  .help ul li a{
+   font-family: 'Avenir';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 250%;
+   color: #212353;
+ }
+ .social_media
